@@ -3,7 +3,7 @@
 # Run commands as ec2-user
 su - ec2-user <<'EOF'
 cd ~/
-rm -rf multi-region-disaster-recovery
+rm -rf terraform-aws-multi-env-webapp
 git clone https://github.com/jatharthan/terraform-aws-multi-env-webapp
 cd terraform-aws-multi-env-webapp/app_code
 echo "Deploying Git SHA: ${project_prefix}-${git_sha}" >> /home/ec2-user/deploy.log
